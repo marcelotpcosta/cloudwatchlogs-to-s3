@@ -12,13 +12,13 @@ def lambda_handler(event, context):
     log_groups_to_export = []
     
     if 'S3_BUCKET' not in os.environ:
-        print("Please define S3_BUCKET environment variable and its value in lambda function")
+        print("Please create S3_BUCKET environment variable and its value in lambda function")
         return
     
     print("--> S3_BUCKET=%s" % os.environ["S3_BUCKET"])
 
     if 'LOG_GROUP_NAME' not in os.environ:
-        print("Please define LOG_GROUP_NAME environment variable and its value in lambda function")
+        print("Please create LOG_GROUP_NAME environment variable and its value in lambda function")
         return
     
     print("--> S3_BUCKET=%s" % os.environ["S3_BUCKET"])
